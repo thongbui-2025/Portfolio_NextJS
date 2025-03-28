@@ -12,12 +12,18 @@ const links = [
 ];
 
 const iconInfos = [
-	{ url: "#", src: "/github.png" },
-	{ url: "#", src: "/facebook.png" },
-	{ url: "#", src: "/linkedin.png" },
-	{ url: "#", src: "/instagram.png" },
-	{ url: "#", src: "/dribbble.png" },
-	{ url: "#", src: "/pinterest.png" },
+	{ url: "https://github.com/thongbui-2025", src: "/github.png" },
+	{
+		url: "https://www.facebook.com/thong.bui.10082917/",
+		src: "/facebook.png",
+	},
+	{
+		url: "https://www.linkedin.com/in/v%C4%83n-th%E1%BB%91ng-6559262ba/",
+		src: "/linkedin.png",
+	},
+	{ url: "https://www.instagram.com/thongbui.20_25/", src: "/instagram.png" },
+	// { url: "#", src: "/dribbble.png" },
+	// { url: "#", src: "/pinterest.png" },
 ];
 
 const Navbar = () => {
@@ -45,7 +51,12 @@ const Navbar = () => {
 			{/* SOCIAL */}
 			<div className="hidden md:flex gap-4 w-1/3 justify-end">
 				{iconInfos.map((iconInfo) => (
-					<Link href={iconInfo.url} key={iconInfo.src}>
+					<Link
+						href={iconInfo.url}
+						key={iconInfo.src}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<Image
 							src={iconInfo.src}
 							alt=""
@@ -62,9 +73,21 @@ const Navbar = () => {
 					className="w-10 h-8 flex flex-col justify-between z-50 relative"
 					onClick={() => setOpen((prev) => !prev)}
 				>
-					<div className="w-10 h-1 bg-white rounded"></div>
-					<div className="w-10 h-1 bg-white rounded"></div>
-					<div className="w-10 h-1 bg-white rounded"></div>
+					<div
+						className={`w-10 h-1 ${
+							open ? "bg-white" : "bg-black"
+						} rounded`}
+					></div>
+					<div
+						className={`w-10 h-1 ${
+							open ? "bg-white" : "bg-black"
+						} rounded`}
+					></div>
+					<div
+						className={`w-10 h-1 ${
+							open ? "bg-white" : "bg-black"
+						} rounded`}
+					></div>
 				</button>
 				{/* MENU LIST */}
 				{open && (
