@@ -1,7 +1,8 @@
+// This file is used to configure the JavaScript language service in Visual Studio Code.
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+	"compilerOptions": {
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
 }

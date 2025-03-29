@@ -31,17 +31,19 @@ const AboutPage = () => {
 						{/* BIOGRAPHY TITLE */}
 						<h1 className="font-bold text-2xl">BIOGRAPHY</h1>
 						{/* BIOGRAPHY DESC */}
-						<p className="text-lg">
-							Lorem ipsum, dolor sit amet consectetur adipisicing
-							elit. Vero, accusantium. Vel sint fugit ipsam, sed
-							doloremque saepe quo repudiandae odit voluptate
-							quasi praesentium possimus. Consectetur, incidunt
-							iure? Facilis, nihil autem.
+						<p className="text-lg leading-7 text-justify">
+							Hi, I’m Bui Van Thong – a frontend developer
+							passionate about creating smooth, interactive, and
+							visually engaging web experiences. I specialize in
+							React.js, Next.js, and modern UI frameworks like
+							Tailwind CSS and Ant Design. My goal is to craft
+							intuitive, high-performance web applications while
+							continuously learning and growing in the field of
+							web development.
 						</p>
 						{/* BIOGRAPHY QUOTE */}
 						<span className="italic">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Aut, nesciunt?
+							Passionate about frontend, eager to grow.
 						</span>
 						{/* BIOGRAPHY SIGN SVG */}
 						<div className="self-end">
@@ -212,7 +214,7 @@ const AboutPage = () => {
 								<div className="w-1/3">
 									{/* JOB TITLE */}
 									<div className="bg-white p-3 font-semibold rounded-b-lg rounded-tl-lg">
-										Senior Javascript Engineer
+										Frontend Engineer
 									</div>
 									{/* JOB DESC */}
 									<div className="p-3 text-sm italic">
@@ -225,7 +227,7 @@ const AboutPage = () => {
 									</div>
 									{/* JOB COMPANY */}
 									<div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-										TechBase
+										{/* TechBase */}
 									</div>
 								</div>
 								{/* CENTER */}
@@ -255,7 +257,7 @@ const AboutPage = () => {
 								<div className="w-1/3">
 									{/* JOB TITLE */}
 									<div className="bg-white p-3 font-semibold rounded-b-lg rounded-tr-lg">
-										Senior Javascript Engineer
+										Frontend Engineer
 									</div>
 									{/* JOB DESC */}
 									<div className="p-3 text-sm italic">
@@ -268,7 +270,7 @@ const AboutPage = () => {
 									</div>
 									{/* JOB COMPANY */}
 									<div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-										TechBase
+										{/* TechBase */}
 									</div>
 								</div>
 							</div>
@@ -278,7 +280,7 @@ const AboutPage = () => {
 								<div className="w-1/3">
 									{/* JOB TITLE */}
 									<div className="bg-white p-3 font-semibold rounded-b-lg rounded-tl-lg">
-										Senior Javascript Engineer
+										Frontend Engineer
 									</div>
 									{/* JOB DESC */}
 									<div className="p-3 text-sm italic">
@@ -291,7 +293,7 @@ const AboutPage = () => {
 									</div>
 									{/* JOB COMPANY */}
 									<div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-										TechBase
+										{/* TechBase */}
 									</div>
 								</div>
 								{/* CENTER */}

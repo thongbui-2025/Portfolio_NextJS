@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
 
 const Homepage = () => {
 	return (
@@ -15,7 +16,7 @@ const Homepage = () => {
 				{/* IMAGE CONTAINER */}
 				<div className="h-1/2 relative lg:h-full lg:w-1/2">
 					<Image
-						src="/hero.png"
+						src="/avatar_portfolio.png"
 						fill
 						alt=""
 						className="object-contain"
@@ -24,16 +25,31 @@ const Homepage = () => {
 				{/* TEXT CONTAINER */}
 				<div className="h-1/2 flex flex-col lg:h-full lg:w-1/2 items-center justify-center gap-8">
 					{/* TITLE */}
-					<h1 className="text-4xl font-bold md:text-6xl">
-						Lorem ipsum dolor sit amet consectetur.
-					</h1>
+					<motion.h1 className="text-4xl font-bold md:text-6xl self-start">
+						<Typewriter
+							words={["Hi, I'm Van Thong", "Fullstack"]}
+							loop={0}
+							cursor
+							cursorStyle="|"
+							typeSpeed={70}
+							deleteSpeed={50}
+							delaySpeed={2000}
+						/>
+						<br />
+						Web Developer<span className="ml-1">!</span>
+					</motion.h1>
 					{/* DESC */}
-					<p className="md:text-xl">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Iure nihil delectus eum eos fugiat sequi eveniet ab.
-						Suscipit, consequuntur placeat excepturi quia ratione
-						cupiditate voluptatum, laboriosam earum pariatur quo
-						itaque.
+					<p
+						className="md:text-xl text-justify lead"
+						style={{ lineHeight: "1.75" }}
+					>
+						Hi, my name is Bui Van Thong, a final-year IT student at
+						Ton Duc Thang University with a passion for frontend
+						development. I enjoy building clean, responsive web
+						interfaces using React.js and Next.js. I’ve completed
+						several personal projects and have a solid foundation in
+						Node.js and MongoDB. I’m excited to apply for the React
+						Frontend Intern position and grow alongside your team.
 					</p>
 					<div className="w-full flex gap-4">
 						<Link href={"/portfolio"}>

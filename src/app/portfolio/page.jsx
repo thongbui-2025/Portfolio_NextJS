@@ -17,16 +17,16 @@ const items = [
 		id: 2,
 		color: "from-blue-300 to-violet-300",
 		title: "Movie App",
-		desc: "This project is a movie streaming platform that allows users to browse, search, and watch movies with an optimized and interactive UI. It integrates advanced React concepts to enhance performance and maintainability.",
-		img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+		desc: "This movie streaming platform lets users browse, search, and watch films with an interactive UI, built using advanced React for performance and scalability.",
+		img: "/project_movie.jpg",
 		link: "https://github.com/thongbui-2025/MovieApp",
 	},
 	{
 		id: 3,
 		color: "from-violet-300 to-purple-300",
-		title: "NextJS Portfolio",
-		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-		img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+		title: "My Portfolio",
+		desc: "Developed a responsive portfolio using Next.js and Tailwind CSS, implemented smooth animations with Framer Motion, and integrated Email.js to enable contact form functionality.",
+		img: "/project_portfolio.jpg",
 		link: "https://github.com/thongbui-2025/Portfolio_NextJS",
 	},
 ];
@@ -70,7 +70,7 @@ const PortfolioPage = () => {
 										{item.desc}
 									</p>
 									<Link href={item.link} className="flex">
-										<button className="p-2 text-sm md:p-4 md:text-base lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+										<button className="p-2 text-sm md:p-3 md:text-base lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
 											See Project
 										</button>
 									</Link>
